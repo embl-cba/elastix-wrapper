@@ -1,3 +1,5 @@
+[![Build Status](https://github.com/embl-cba/elastixWrapper/actions/workflows/build.yml/badge.svg)](https://github.com/embl-cba/elastixWrapper/actions/workflows/build.yml)
+
 # Elastix Wrapper
 
 This repository contains the code for the Fiji plugin [Elastix](https://imagej.net/Elastix) for 2D and 3D image registration. The plugin is a wrapper around the image registration suite [elastix](https://elastix.lumc.nl/). Wrapping elastix into Fiji provides the convenience of easy image handling, visualisation and a graphical user interface.
