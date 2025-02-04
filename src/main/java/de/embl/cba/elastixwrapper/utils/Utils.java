@@ -38,7 +38,10 @@ import ij.process.ImageProcessor;
 import org.scijava.log.LogService;
 
 import java.io.*;
+import java.util.ArrayList;
 import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /**
  * Created by tischi on 06/11/16.
@@ -48,6 +51,37 @@ public abstract class Utils {
 
     public static boolean verbose = false;
     public static String LOAD_CHANNELS_FROM_FOLDERS = "from sub-folders";
+
+    public static List< File > getFileList( File directory, String fileNameRegExp, boolean recursive )
+    {
+        final ArrayList< File > files = new ArrayList<>();
+        populateFileList( directory, fileNameRegExp, files, recursive );
+        return files;
+    }
+
+    public static void populateFileList( File directory, String fileNameRegExp, List< File > files, boolean recursive ) {
+
+        // Get all the files from a directory.
+        File[] fList = directory.listFiles();
+
+        if( fList != null )
+        {
+            for ( File file : fList )
+            {
+                if ( file.isFile() )
+                {
+                    final Matcher matcher = Pattern.compile( fileNameRegExp ).matcher( file.getName() );
+
+                    if ( matcher.matches() )
+                        files.add( file );
+                }
+                else if ( file.isDirectory() && recursive )
+                {
+                    populateFileList( file, fileNameRegExp, files, recursive );
+                }
+            }
+        }
+    }
 
     public static double[] delimitedStringToDoubleArray(
             String s, String delimiter) {

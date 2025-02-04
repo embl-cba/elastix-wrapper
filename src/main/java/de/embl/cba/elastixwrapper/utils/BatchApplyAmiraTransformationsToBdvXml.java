@@ -1,7 +1,5 @@
 package de.embl.cba.elastixwrapper.utils;
 
-import de.embl.cba.tables.FileAndUrlUtils;
-import de.embl.cba.transforms.utils.TransformConversions;
 import net.imglib2.realtransform.AffineTransform3D;
 
 import java.io.File;
@@ -14,7 +12,7 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import static de.embl.cba.transforms.utils.TransformConversions.changeTransformToScaledUnits;
+import static de.embl.cba.elastixwrapper.utils.TransformConversions.changeTransformToScaledUnits;
 
 public class BatchApplyAmiraTransformationsToBdvXml
 {
@@ -48,7 +46,7 @@ public class BatchApplyAmiraTransformationsToBdvXml
 	public void run() throws IOException
 	{
 		System.out.println( "Fetching files....");
-		final List< File > files = FileAndUrlUtils.getFileList( new File( directory ), filePattern );
+		final List< File > files = Utils.getFileList( new File( directory ), filePattern, false );
 
 		for ( File file : files )
 		{
