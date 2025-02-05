@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0   https://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>org.scijava</groupId>
@@ -13,7 +13,7 @@
 
 	<groupId>de.embl.cba</groupId>
 	<artifactId>elastix-wrapper</artifactId>
-	<version>0.6.0-SNAPSHOT</version>
+	<version>0.6.1-SNAPSHOT</version>
 	<name>Fiji plugin for image registration using elastix</name>
 	<description>A Fiji plugin for image registration using elastix.</description>
 	<url>https://github.com/embl-cba/elastixWrapper</url>
@@ -27,7 +27,7 @@
 			<id>tischi</id>
 			<name>Christian Tischer</name>
 			<email>Christian.Tischer@EMBL.DE</email>
-			<url/>
+			<url />
 			<organization>EMBL Heidelberg</organization>
 			<organizationUrl>http://www.embl.de</organizationUrl>
 			<roles>
