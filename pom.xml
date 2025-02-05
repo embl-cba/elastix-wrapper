@@ -112,11 +112,6 @@
 			<version>${metaimage-io.version}</version>
 		</dependency>
 		<dependency>
-			<groupId>de.embl.cba</groupId>
-			<artifactId>metaimage-io</artifactId>
-			<version>${metaimage-io.version}</version>
-		</dependency>
-		<dependency>
 			<groupId>sc.fiji</groupId>
 			<artifactId>bigdataviewer_fiji</artifactId>
 		</dependency>
