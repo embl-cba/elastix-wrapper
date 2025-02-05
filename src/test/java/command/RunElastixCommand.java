@@ -1,6 +1,6 @@
 package command;
 
-import de.embl.cba.elastixwrapper.commands.ElastixCommand;
+import de.embl.cba.elastix.commands.ElastixCommand;
 import net.imagej.ImageJ;
 
 public class RunElastixCommand

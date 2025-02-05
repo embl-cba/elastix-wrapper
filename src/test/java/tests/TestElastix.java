@@ -1,12 +1,19 @@
 package tests;
 
-import de.embl.cba.elastixwrapper.wrapper.elastix.ElastixWrapperSettings;
-import de.embl.cba.elastixwrapper.wrapper.elastix.ElastixWrapper;
-import de.embl.cba.elastixwrapper.wrapper.elastix.parameters.ElastixParameters;
+import de.embl.cba.elastix.wrapper.elastix.ElastixWrapperSettings;
+import de.embl.cba.elastix.wrapper.elastix.ElastixWrapper;
+import de.embl.cba.elastix.wrapper.elastix.parameters.ElastixParameters;
 import net.imagej.ImageJ;
+
+import java.io.File;
 
 public class TestElastix
 {
+	// FIXME:
+	// 1. Make this test headless
+	// 2. Add an actual test (assert)
+	// 3. Make this also run in the GitHub actions
+
 	//@Test
 	public static void registerEulerSingleChannelImage()
 	{
@@ -16,11 +23,11 @@ public class TestElastix
 		ElastixWrapperSettings settings = new ElastixWrapperSettings();
 
 		settings.logService = ij.log();
-		settings.elastixDirectory = "/Applications/elastix_macosx64_v4.8" ;
-		settings.tmpDir = "/Users/tischer/Documents/elastixWrapper/src/test/resources/test-data/fluo01/tmp";
+		settings.elastixDirectory = "/Applications/elastix-5.2.0-mac" ;
+		settings.tmpDir = new File("src/test/resources/test-data/fluo01/tmp").getAbsolutePath();
 		settings.transformationType = ElastixParameters.TransformationType.Euler;
-		settings.fixedImageFilePath = "/Users/tischer/Documents/elastixWrapper/src/test/resources/test-data/fluo01/ellipsoid-horizontal-dxyz200nm.tif";
-		settings.movingImageFilePath = "/Users/tischer/Documents/elastixWrapper/src/test/resources/test-data/fluo01/ellipsoid-at45degrees-dxyz200nm.tif";
+		settings.fixedImageFilePath = new File("src/test/resources/test-data/fluo01/ellipsoid-horizontal-dxyz200nm.tif").getAbsolutePath();
+		settings.movingImageFilePath = new File("src/test/resources/test-data/fluo01/ellipsoid-at45degrees-dxyz200nm.tif").getAbsolutePath();
 		settings.downSamplingFactors = "10 10";
 		settings.fixedMaskPath = "";
 		settings.movingMaskPath = "";

@@ -6,8 +6,8 @@
  */
 
 import bdv.util.Bdv;
-import de.embl.cba.elastixwrapper.wrapper.elastix.ElastixWrapperSettings;
-import de.embl.cba.elastixwrapper.wrapper.elastix.ElastixWrapper;
+import de.embl.cba.elastix.wrapper.elastix.ElastixWrapperSettings;
+import de.embl.cba.elastix.wrapper.elastix.ElastixWrapper;
 import net.imagej.ImageJ;
 
 

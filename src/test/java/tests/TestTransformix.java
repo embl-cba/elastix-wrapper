@@ -1,9 +1,8 @@
 package tests;
 
-import de.embl.cba.elastixwrapper.wrapper.transformix.TransformixWrapper;
-import de.embl.cba.elastixwrapper.wrapper.transformix.TransformixWrapperSettings;
+import de.embl.cba.elastix.wrapper.transformix.TransformixWrapper;
+import de.embl.cba.elastix.wrapper.transformix.TransformixWrapperSettings;
 import net.imagej.ImageJ;
-import org.junit.Test;
 
 import java.io.File;
 

@@ -10,7 +10,7 @@
 	<!-- mvn clean install -Dmaven.test.skip=true -Dscijava.app.directory=/Users/tischer/Desktop/Fiji/Fiji-ElastixWrapper.app -->
 
 	<groupId>de.embl.cba</groupId>
-	<artifactId>elastixWrapper</artifactId>
+	<artifactId>elastix-wrapper</artifactId>
 	<version>0.6.0-SNAPSHOT</version>
 	<name>Fiji plugin for image registration using elastix</name>
 	<description>A Fiji plugin for image registration using elastix.</description>
@@ -29,12 +29,18 @@
 			<organization>EMBL Heidelberg</organization>
 			<organizationUrl>http://www.embl.de</organizationUrl>
 			<roles>
-				<role>microscopy</role>
-				<role>image analysis</role>
+				<role>founder</role>
+				<role>lead</role>
+				<role>developer</role>
 			</roles>
 			<timezone>+1</timezone>
 		</developer>
 	</developers>
+	<contributors>
+		<contributor>
+			<name>None</name>
+		</contributor>
+	</contributors>
 	<licenses>
 		<license>
 			<name>Simplified BSD License</name>
@@ -48,13 +54,13 @@
 		</mailingList>
 	</mailingLists>
 	<scm>
-		<connection>scm:git:https://github.com/embl-cba/elastixWrapper</connection>
-		<developerConnection>scm:git:git@github.com:embl-cba/elastixWrapper</developerConnection>
+		<connection>scm:git:https://github.com/embl-cba/elastix-wrapper</connection>
+		<developerConnection>scm:git:git@github.com:embl-cba/elastix-wrapper</developerConnection>
 		<tag>HEAD</tag>
-		<url>https://github.com/embl-cba/elastixWrapper</url>
+		<url>https://github.com/embl-cba/elastix-wrapper</url>
 	</scm>
 	<properties>
-		<package-name>de.embl.cba.elastixwrapper</package-name>
+		<package-name>de.embl.cba.elastix</package-name>
 		<license.licenseName>bsd_2</license.licenseName>
 		<license.copyrightOwners>EMBL</license.copyrightOwners>
 		<imagej.app.directory>/Applications/Fiji.app/</imagej.app.directory>
@@ -66,6 +72,14 @@
 		<!-- NB: Deploy releases to the SciJava Maven repository. -->
 		<releaseProfiles>sign,deploy-to-scijava</releaseProfiles>
 	</properties>
+	<issueManagement>
+		<system>GitHub</system>
+		<url>https://github.com/embl-cba/elastix-wrapper/issues</url>
+	</issueManagement>
+	<ciManagement>
+		<system>GitHub Actions</system>
+		<url>https://github.com/embl-cba/elastix-wrapper/actions</url>
+	</ciManagement>
 	<build>
 		<plugins>
 			<plugin>

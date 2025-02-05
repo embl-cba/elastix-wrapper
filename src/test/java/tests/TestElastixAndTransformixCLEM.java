@@ -1,12 +1,11 @@
 package tests;
 
-import de.embl.cba.elastixwrapper.wrapper.elastix.ElastixWrapperSettings;
-import de.embl.cba.elastixwrapper.wrapper.elastix.ElastixWrapper;
-import de.embl.cba.elastixwrapper.wrapper.elastix.parameters.ElastixParameters;
-import de.embl.cba.elastixwrapper.wrapper.transformix.TransformixWrapper;
-import de.embl.cba.elastixwrapper.wrapper.transformix.TransformixWrapperSettings;
+import de.embl.cba.elastix.wrapper.elastix.ElastixWrapperSettings;
+import de.embl.cba.elastix.wrapper.elastix.ElastixWrapper;
+import de.embl.cba.elastix.wrapper.elastix.parameters.ElastixParameters;
+import de.embl.cba.elastix.wrapper.transformix.TransformixWrapper;
+import de.embl.cba.elastix.wrapper.transformix.TransformixWrapperSettings;
 import net.imagej.ImageJ;
-import org.junit.Test;
 
 import java.io.File;
 
@@ -22,7 +21,7 @@ public class TestElastixAndTransformixCLEM
 		ElastixWrapperSettings settings = new ElastixWrapperSettings();
 
 		settings.logService = ij.log();
-		settings.elastixDirectory = "/Applications/elastix_macosx64_v4.8" ;
+		settings.elastixDirectory = "/Applications/elastix-5.2.0-mac" ;
 		settings.tmpDir = "/Users/tischer/Documents/elastixWrapper/src/test/resources/test-data/clem/tmp";
 		settings.transformationType = ElastixParameters.TransformationType.BSpline;
 		settings.fixedImageFilePath = "/Users/tischer/Documents/elastixWrapper/src/test/resources/test-data/clem/em.tif";

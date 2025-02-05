@@ -1,7 +1,7 @@
-import de.embl.cba.elastixwrapper.wrapper.elastix.ElastixWrapperSettings;
-import de.embl.cba.elastixwrapper.wrapper.elastix.ElastixWrapper;
+import de.embl.cba.elastix.wrapper.elastix.ElastixWrapperSettings;
+import de.embl.cba.elastix.wrapper.elastix.ElastixWrapper;
 
-import de.embl.cba.elastixwrapper.wrapper.elastix.parameters.ElastixParameters;
+import de.embl.cba.elastix.wrapper.elastix.parameters.ElastixParameters;
 import net.imagej.ImageJ;
 
 public class ExampleElastixAPI

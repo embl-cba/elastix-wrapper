@@ -1,6 +1,6 @@
 package command;
 
-import de.embl.cba.elastixwrapper.commands.TransformixCommand;
+import de.embl.cba.elastix.commands.TransformixCommand;
 import net.imagej.ImageJ;
 
 public class RunTransformixCommand

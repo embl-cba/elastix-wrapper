@@ -1,8 +1,6 @@
-import de.embl.cba.elastixwrapper.wrapper.StagingManager;
-import de.embl.cba.elastixwrapper.wrapper.elastix.ElastixWrapperSettings;
-import de.embl.cba.elastixwrapper.wrapper.elastix.ElastixWrapper;
-import de.embl.cba.elastixwrapper.wrapper.transformix.TransformixWrapper;
-import de.embl.cba.elastixwrapper.wrapper.transformix.TransformixWrapperSettings;
+import de.embl.cba.elastix.wrapper.StagingManager;
+import de.embl.cba.elastix.wrapper.transformix.TransformixWrapper;
+import de.embl.cba.elastix.wrapper.transformix.TransformixWrapperSettings;
 import de.embl.cba.metaimage_io.MetaImage_Reader;
 import ij.IJ;
 import ij.ImagePlus;

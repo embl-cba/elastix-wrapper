@@ -1,6 +1,6 @@
 package users.sultan;
 
-import de.embl.cba.elastixwrapper.utils.BatchApplyAmiraTransformationsToBdvXml;
+import de.embl.cba.elastix.utils.BatchApplyAmiraTransformationsToBdvXml;
 
 import java.io.IOException;
 
